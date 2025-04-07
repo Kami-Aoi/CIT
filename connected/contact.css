@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1D;
+    color: white; 
+    text-align: center; 
+}
+
+header {
+    background-color: #3B1C32;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #6A1E55;
+    padding: 5px 0;
+    text-align: center;
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3B1C32;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; 
+    margin: 40px auto; /* Center the container */
+}
+
+.section {
+    background-color: #6A1E55;
+    border: 1px solid #3B1C32;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+label {
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Set to 100% for responsiveness */
+    max-width: 500px; /* Set a max width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+}
+
+textarea {
+    resize: vertical; /* Allows users to resize the text area vertically */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Ensure it's displayed as block */
+    margin-top: 15px; /* Ensure some space between the input fields and the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.privacy {
+    font-size: 0.9em;
+    color: white; 
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+/* Mobile First: Small screens (phones) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Tablet Screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 90%;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* Desktop Screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 60%;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

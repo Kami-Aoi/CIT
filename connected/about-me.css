@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    background-color: #1A1A1D;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+header {
+    background-color: #3B1C32;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #6A1E55;
+    padding: 5px 0;
+    text-align: center;
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3B1C32;
+}
+
+.my-section {
+    background-color: #6A1E55;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.my-section img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #3B1C32;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.table1 td {
+    padding: 10px;
+    text-align: left;
+}
+
+.rap {
+    white-space: nowrap;
+}
+
+.my-section2 {
+    background-color: #6A1E55;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.mapp {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .my-section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .my-section img {
+        width: 150px;
+    }
+
+    .table1 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
